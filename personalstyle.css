@@ -31,8 +31,7 @@ p {
   opacity: .8;
   border-style: groove;
   border-width: 2px;
-  padding-left: 20px;
-  padding-right: 20px;
+
 }
 
 /* This code is for flex containers */
@@ -42,25 +41,25 @@ p {
   margin: 0;
   list-style: none;
 
-/**************************
-no longer needed, as flex is standard across browsers
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-****************************/
+
   display: flex;
-  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .footer-item {
-  width: 5em;
-  height: 2em;
-  margin: 1em;
-  text-align: -webkit-center;
+
+  text-align: center;
   line-height: 2;
   font-size: 1em;
+  flex-flow: row wrap;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  display: inline;
+
 }
 
 footer {
@@ -76,4 +75,17 @@ footer a {
 footer a:hover {
   background-color: black;
   color: white;
+}
+
+@media all and (min-width: 900px){
+  .main {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+@media all and (max-width: 899px){
+  .main {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
