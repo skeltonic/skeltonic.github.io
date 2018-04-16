@@ -1,91 +1,132 @@
-h1 {
-  font-family: 'Roboto', sans-serif;
-}
-
 body {
-  background-color: #8b939e;
-  background-image: url(beach.jpg);
-  background-repeat: no-repeat;
-  background-position: justify-content;
-  background-attachment: fixed;
-  background-size: cover;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+    background-color: darkgreen;
 }
 
-header {
-  background-color: white;
-  opacity: .6;
-  border-style: groove;
-  border-width: 2px;
-  text-align: right;
-  padding-right: 20px;
-}
 
-hr {
-  width: 60%
+.wrappergrid {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 2fr;
+    border-style: groove;
+    
 }
-
-p {
-  background-color: white;
-  opacity: .8;
-  border-style: groove;
-  border-width: 2px;
+.parentgrid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    height: 300vh;
+    width: 500vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: darkseagreen;
+    position fixed;
+    border-style: groove;
+    position: relative;
 
 }
 
-/* This code is for flex containers */
 
-.footer-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.childgrid {
+    background-color: beige;
+    border-style: groove;
+    position: relative;
+    transition: all 2s;
+    z-index: 0;
 
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.footer-item {
-
-  text-align: center;
-  line-height: 2;
-  font-size: 1em;
-  flex-flow: row wrap;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0px;
-  display: inline;
 
 }
 
-footer {
-  background-color: white;
-  opacity: .6;
+
+
+
+
+
+
+    
+.G1:focus {
+    background-color: aliceblue;
+    transform: translate(0%, 0%);
+
+
 }
 
-footer a {
-  text-decoration: none;
-  color: black;
+.G2:focus {
+    background-color: aliceblue;
+    transform: translate(-100%, 0%);
+
+
 }
 
-footer a:hover {
-  background-color: black;
-  color: white;
+.G3:focus {
+    background-color: aliceblue;
+    transform: translate(-200%, 0%);
+
+
 }
 
-@media all and (min-width: 900px){
-  .main {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+.G4:focus {
+    background-color: aliceblue;
+    transform: translate(0%, -100%);
+
+
 }
-@media all and (max-width: 899px){
-  .main {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+
+.G5:focus {
+    background-color: aliceblue;
+    transform: translate(-100%, -100%);
+
+
+}
+
+.G6:focus {
+    background-color: aliceblue;
+    transform: translate(-200%, -100%);
+
+
+}
+
+.G7:focus {
+    background-color: aliceblue;
+    transform: translate(0, -200%);
+
+
+}
+
+.G8:focus {
+    background-color: aliceblue;
+    transform: translate(-100%, -200%);
+
+
+}
+
+.G9:focus {
+    background-color: aliceblue;
+    transform: translate(-200%, -200%);
+
+
+}
+
+.G10:focus {
+    background-color: aliceblue;
+    transform: translate(0, -300%);
+
+
+}
+
+
+.G11:focus {
+    background-color: aliceblue;
+    transform: translate(-100%, -300%);
+
+
+}
+
+
+.G12:focus {
+    background-color: aliceblue;
+    transform: translate(-200%, -300%);
+
+
+}
 }
